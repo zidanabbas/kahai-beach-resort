@@ -1,0 +1,36 @@
+{
+    "name": "midtrans/midtrans-php",
+    "description": "PHP Wrapper for Midtrans Payment API.",
+    "homepage": "https://midtrans.com",
+    "version": "2.5.2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Zidane Abbas",
+        "email": "zidan.abbas28@gmail.com"
+    }],
+    "require": {
+        "php": ">=5.4",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7.*",
+        "psy/psysh": "0.4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Midtrans\\": "Midtrans/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Midtrans\\": [
+                "tests/",
+                "test/integration",
+                "tests/utility",
+                "tests/utility/fixture"
+            ]
+        }
+    }
+}
